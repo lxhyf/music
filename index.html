@@ -54,10 +54,10 @@
             <div class="audio_con">
                 <audio ref='audio' @play="play" @pause="pause" :src="musicUrl" controls autoplay loop class="myaudio"></audio>
             </div>
-            <video class="video_con" v-show="isShow" style="display: none;">
+            <div class="video_con" v-show="isShow" style="display: none;">
                 <video :src="mvUrl" controls="controls"></video>
                 <div class="mask" @click="hide"></div>
-            </video>
+            </div>
         </div>
     </div>
     <!--官网提供的axios在线地址-->
